@@ -1,0 +1,338 @@
+img{
+    max-width: 100%;
+}
+
+/* satrt header */
+.header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1;
+} 
+.header-img {
+    text-align: center;
+}
+.header-img img{
+    width: 100px;
+}
+.menu ul{
+    margin-bottom: 0;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin-left: -5px;
+    position: relative;
+}
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px 20px;
+    font-weight: 600;
+}
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    top: 97px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.menu ul li:hover a::after{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+}
+/* end header */
+
+/* start banner */
+.banner {
+    background-image: url(./img/bg5-1-1920x1280.jpg),linear-gradient(rgba(0, 0, 0,.5),rgb(19, 19, 10,.5));
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 270px 0;
+}
+.banner-text {
+    padding: 0px 20px 34px;
+}
+.banner-text h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 900;
+}
+.banner-text p{
+    color: white;
+}
+.banner-text a {
+    text-decoration: none; 
+    background: #0154f7;
+    padding: 12px 35px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 50px 0;
+    transition: .5s;
+}
+.banner-text a:hover {
+    border: 2px solid;
+    background: beige;
+    color: black;
+}
+/* end banner */
+
+/* start banner bottom */
+.icon {
+    width: 50px;
+    height: 100px;
+    font-size: 30px;
+    color: #2b6dee;
+}
+.icon-right h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.icon-right p {
+    line-height: 35px;
+    color: darkgray;
+    font-weight: 600;
+}
+/* end banner bottom */
+
+/* start expert details */
+.expert {
+    background-image: url(./img/bg1-1-1200x800.jpg);
+    padding: 140px 170px;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.expert h2 {
+    font-weight: 600;
+    font-size: 35px;
+}
+.expert p {
+    line-height: 35px;
+    margin: 50px 0;
+}
+.expert ul{
+    margin: 50px 0;
+}
+.expert ul li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+.expert ul li i{
+    color: #3368c6;
+    margin-right: 10px;
+}
+.expert a {
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 30px;
+    margin: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .5s;
+}
+.expert a:hover {
+    color: white;
+    background: #3368c6;
+}
+/* end expert details */
+
+/* start expert bottom details */
+.expert-bottom h3{
+    font-size: 35px;
+}
+.expert-bottom h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+/* end expert bottom details */
+
+/* start service details */
+.service h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.service p {
+    font-size: 20px;
+    color: darkgray;
+}
+.icon-2 {
+    width: 50px;
+    height: 100px;
+    font-size: 35px;
+    color: #3368c6;
+    margin-top: 20px;
+}
+/* end service details */
+
+/* start service-2 details */
+.service-content h2{
+    font-size: 35px;
+    position: relative;
+    margin: 60px 0;
+}
+.service-content h2 span {
+    font-size: 45px;
+    font-weight: 600;
+}
+.service-content h2::after {
+    content: "";
+    top: 180px;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    background: black;
+}
+.icon-3-a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    background: #41a9e0;
+    padding: 6px 17px;
+    border-radius: 10px;
+    color: white;
+}
+.icon-3-aa {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    background: #6e8fc7;
+    padding: 6px 17px;
+    border-radius: 10px;
+    color: white;
+}
+.icon-3-aaa {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    background: #e66c67;
+    padding: 6px 17px;
+    border-radius: 10px;
+    color: white;
+}
+.icon-3-aaaa {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    background: #34b794;
+    padding: 6px 17px;
+    border-radius: 10px;
+    color: white;
+}
+.abab{
+    margin-left: 90px;
+}
+.shopon h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.shopon p {
+    font-size: 20px;
+    color: darkgray;
+}
+
+/* start service-2 details */
+
+/*  trasted other company */
+
+.company-trusted h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #3368c6;
+}
+.company-trusted h2 i{
+    margin-right: 16px;
+    font-size: 46px;
+}
+/*  trasted other company */
+.company-trusted h3{
+    position: relative;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.company-trusted h4 {
+    position: relative;
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.company-trusted h5{
+    position: relative;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.company-trusted h3::after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    height: 5px;
+    width: 1000px;
+    background: #3368c6;
+    border-radius: 10px;
+}
+.company-trusted h4::after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    height: 5px;
+    width: 900px;
+    background: #3368c6;
+    border-radius: 10px;
+}
+.company-trusted h5::after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    height: 5px;
+    width: 800px;
+    background: #3368c6;
+    border-radius: 10px;
+}
+.company-trusted p{
+    margin-left: 1068px;
+    color: #3368c6;
+}
+
+/* footer */
+.footer{
+    background: #635cdb;
+    padding: 15px 0;
+}
+.footer h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+.footer a:hover{
+    color: aquamarine;
+}
+/* footer */
